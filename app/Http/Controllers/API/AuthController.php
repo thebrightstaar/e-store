@@ -242,7 +242,6 @@ class AuthController extends BaseController
             $message->to($email);
             $message->subject('Reset you password');
         });
-
         return $this->SendResponse('Check your email', 200);
     }
 }
