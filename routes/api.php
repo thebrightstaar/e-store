@@ -29,3 +29,7 @@ Route::put('update', 'API\AuthController@updateUserInformation')->middleware('au
 Route::post('verify', 'API\AuthController@emailVerify');
 Route::post('resend', 'API\AuthController@resendCode');
 
+Route::get('faq', 'API\FAQController@index');
+Route::post('add/question', 'API\FAQController@store')->middleware('auth:api');
+Route::put('update/question/{id}', 'API\FAQController@update')->middleware('auth:api');
+Route::delete('delete/question/{id}', 'API\FAQController@delete')->middleware('auth:api');
