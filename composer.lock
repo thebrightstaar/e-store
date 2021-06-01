@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43c1fdeee6a539dc877e247f3d9a62a3",
+    "content-hash": "32893e316ff7ae68597944f7eedc6260",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,91 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.0.3"
             },
             "time": "2021-03-11T06:42:03+00:00"
+        },
+        {
+            "name": "astrotomic/laravel-translatable",
+            "version": "v11.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Astrotomic/laravel-translatable.git",
+                "reference": "d853a3c34be42941dc83c5cddd9e1e98c71abae1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Astrotomic/laravel-translatable/zipball/d853a3c34be42941dc83c5cddd9e1e98c71abae1",
+                "reference": "d853a3c34be42941dc83c5cddd9e1e98c71abae1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+                "illuminate/database": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+                "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.* || ^4.0 || ^5.0 || ^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Astrotomic\\Translatable\\TranslatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Astrotomic\\Translatable\\": "src/Translatable/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Witkowski",
+                    "email": "gummibeer@astrotomic.info",
+                    "homepage": "https://gummibeer.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dimitrios Savvopoulos",
+                    "email": "ds@dimsav.com",
+                    "homepage": "http://dimsav.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package for multilingual models",
+            "homepage": "https://astrotomic.info",
+            "keywords": [
+                "database",
+                "language",
+                "laravel",
+                "translation"
+            ],
+            "support": {
+                "docs": "https://docs.astrotomic.info/laravel-translatable",
+                "email": "dev@astrotomic.info",
+                "issues": "https://github.com/Astrotomic/laravel-translatable/issues",
+                "source": "https://github.com/Astrotomic/laravel-translatable"
+            },
+            "funding": [
+                {
+                    "url": "https://offset.earth/treeware",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Gummibeer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://issuehunt.io/r/astrotomic",
+                    "type": "issuehunt"
+                }
+            ],
+            "time": "2020-11-19T14:10:38+00:00"
         },
         {
             "name": "brick/math",
@@ -975,6 +1060,69 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "hardevine/shoppingcart",
+            "version": "2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hardevine/LaravelShoppingcart.git",
+                "reference": "2fc6eff895ae6d94978125f6bc65aceadc4873c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hardevine/LaravelShoppingcart/zipball/2fc6eff895ae6d94978125f6bc65aceadc4873c5",
+                "reference": "2fc6eff895ae6d94978125f6bc65aceadc4873c5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8",
+                "illuminate/session": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8",
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.0",
+                "orchestra/testbench": "~3.1",
+                "phpunit/phpunit": "~5.0 || ~6.0 || ~7.0"
+            },
+            "suggest": {
+                "gloudemans/notify": "Simple flash notifications for Laravel"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
+                    ],
+                    "aliases": {
+                        "Cart": "Gloudemans\\Shoppingcart\\Facades\\Cart"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gloudemans\\Shoppingcart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Gloudemans",
+                    "email": "info@robgloudemans.nl"
+                }
+            ],
+            "description": "Laravel Shoppingcart",
+            "keywords": [
+                "laravel",
+                "shoppingcart"
+            ],
+            "support": {
+                "source": "https://github.com/hardevine/LaravelShoppingcart/tree/2.9"
+            },
+            "time": "2020-09-06T07:46:29+00:00"
         },
         {
             "name": "laravel/framework",
