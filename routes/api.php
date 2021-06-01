@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Http\Controllers\API;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -39,3 +41,7 @@ Route::post('wishlist', 'WishlistController@store')->name('wishlist.store');
     Route::get('wishlist/products', 'WishlistController@index')->name('wishlist.products.index');
 
 
+Route::get('faq', 'API\FAQController@index');
+Route::post('add/question', 'API\FAQController@store')->middleware('auth:api');
+Route::put('update/question/{id}', 'API\FAQController@update')->middleware('auth:api');
+Route::delete('delete/question/{id}', 'API\FAQController@delete')->middleware('auth:api');
